@@ -42,11 +42,24 @@ class SplitMergeFEPlugin extends Gdn_Plugin {
 	}
 	
 	
+	// LATER: TODO (I HATE THIS CHECKBOX STYLE MARKING)
+	
 	/**
 	* Undocumented 
 	* 
 	*/
+/*	public function DiscussionController_CommentOptions_Handler($Sender) {
+		$Sender->CanEditComments = False;
+		$Object =& $Sender->EventArguments['Comment'];
+		//$PermissionCategoryID = GetValue('PermissionCategoryID', $Object, GetValue('PermissionCategoryID', $Sender->Discussion));
+		if (Gdn::Session()->CheckPermission('Vanilla.Comments.Edit', TRUE, 'Category', 'any')) {
+		}
+	}*/
 	
+	/**
+	* Undocumented 
+	* 
+	*/
 	public function ModerationController_Render_Before($Sender) {
 		$Sender->AddJsFile('split-merge-fe.js', 'plugins/SplitMergeFE');
 	}
