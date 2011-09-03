@@ -1,0 +1,10 @@
+SplitMerge (FE)
+===============
+Split / Merge (Fixed Edition).
+Allows moderators with discussion edit permission to split & merge discussions.
+
+CHANGES FROM ORIGINAL SPLIT/MERGE PLUGIN
+========================================
+- allow move comments to other existing discussion
+- fixed missed translations
+- replaced UserModel()->GetAttribute() by Session()->GetAttribute()
