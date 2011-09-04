@@ -12,7 +12,7 @@ Contact Vanilla Forums Inc. at support [at] vanillaforums [dot] com
 $PluginInfo['SplitMergeFE'] = array(
 	'Name' => 'Split / Merge (FE)',
 	'Description' => 'Allows moderators with discussion edit permission to split & merge discussions.',
-	'Version' => '1.00',
+	'Version' => '1.01',
 	'Author' => "Mark O'Sullivan (Fixed by S)",
 	'AuthorEmail' => 'mark@vanillaforums.com',
 	'AuthorUrl' => 'http://www.vanillaforums.com'

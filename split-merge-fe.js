@@ -8,18 +8,18 @@ jQuery(function($){
 	};
 	
 	var AutocompleteResult = function(e, data) {
-		$('form.MoveComemntsForm #Form_DiscussionID').val(data[1]);
+		$('form.MoveCommentsForm #Form_DiscussionID').val(data[1]);
 	}
 	
 	var InitializeAutocomplete = function() {
-		$('form.MoveComemntsForm').livequery(function(){
-			var self = this;
-			$('#Form_Name', self)
+		$('form.MoveCommentsForm').livequery(function(){
+			var form = this;
+			$('#Form_Name', form)
 				.autocomplete(gdn.url('/vanilla/moderation/autocompletediscussionname'), AutocompleteSettings)
 				.result(AutocompleteResult);
 
-			$('li.CheckedDiscussionID input', self).change(function(){
-				$('#Form_DiscussionID', self).val( $(this).val() );
+			$('li.CheckedDiscussionID input', form).change(function(){
+				$('#Form_DiscussionID', form).val( $(this).val() );
 			});
 			
 		});

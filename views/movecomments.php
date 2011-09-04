@@ -8,7 +8,7 @@ $DiscussionData = $this->Data('DiscussionData');
 <h1><?php echo $this->Data('Title'); ?></h1>
 
 <?php
-echo $this->Form->Open(array('class' => 'MoveComemntsForm'));
+echo $this->Form->Open(array('class' => 'MoveCommentsForm'));
 echo $this->Form->Errors();
 ?>
 
